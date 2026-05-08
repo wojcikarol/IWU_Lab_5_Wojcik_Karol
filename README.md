@@ -1,3 +1,4 @@
+```mermaid
 graph LR
   subgraph SYS["System rezerwacji sal"]
     UC1["Przejrzyj dostępność sal"]
@@ -31,7 +32,6 @@ graph LR
 
   E["System e-mail"] --> UC9
 
-  UC1 -->|include| UC5
   UC2 -->|include| UC5
   UC3 -->|include| UC5
   UC4 -->|include| UC5
@@ -41,7 +41,8 @@ graph LR
   UC10 -->|include| UC5
   UC11 -->|include| UC5
 
-  UC9 -.->|extend| UC2
-  UC9 -.->|extend| UC3
-  UC9 -.->|extend| UC4
-  UC9 -.->|extend| UC11# IWU_Lab_5_Wojcik_Karol
+  UC2 -.->|extend| UC9
+  UC3 -.->|extend| UC9
+  UC4 -.->|extend| UC9
+  UC11 -.->|extend| UC9
+```
